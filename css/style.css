@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.header_ {
+  background-color: rgb(65, 60, 60);
+  opacity: 0.7;
+
+  width: 100%;
+  height: 55px;
+
+  position: fixed;
+  top: 0px;
+
+  z-index: 3;
+
+  transition: .5s;
+}
+
+.header_:hover {
+  opacity: 0.9;
+}
+
+.header_icon {
+  width: 150px;
+  height: 55px;
+
+  margin-left: 25px;
+
+  float: left;
+}
+
+.header_ul_ {
+  list-style: none;
+  float: right;
+
+  margin: 0.9% 5% 0 0 ;
+}
+
+.header_ul_li_ {
+  display: inline-block;
+
+  margin-left: 40px;
+
+  font-size: larger;
+}
+
+.header_list_li_a {
+  text-decoration: none;
+
+  color: rgb(227, 225, 217);
+
+  transition: 1.5s;
+}
+
+.header_list_li_a:hover {
+  color: rgb(169, 144, 61);
+}
+
+.header_list_li_a::after {
+  content: "";
+
+  display: block;
+
+  width: 0%;
+
+  opacity: 0;
+
+  transition: 1s;
+
+  border-bottom: 3px solid rgb(176, 119, 12);
+}
+
+.header_list_li_a:hover::after  {
+  width: 100%;
+  opacity: 1;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.main {
+  perspective: 100px;
+}
+
+.header_shop_ {
+  margin: 5% auto 3% auto;
+  text-align: center;
+}
+
+.header_shop_ h2 {
+  color: rgb(123, 72, 28);
+  font-size: 46px;
+}
+
+.header_shop_ span {
+  display: block;
+  width: 180px;
+  height: 4px;
+  background-color: rgb(123, 72, 28);
+  margin: 0 auto;
+}
+
+.container_ {
+  width: 80%;
+  margin: 0 auto 100px auto;
+}
+
+.container_content_ {
+  overflow: auto;
+}
+.container_content_card_ {
+  float: left;
+  
+  width: 22%;
+  height: 420px;
+
+  position: relative;
+  transition: all 2s;
+  transform-style: preserve-3d;
+
+  margin-bottom: 5%;
+}
+
+.container_content_card_front_ , .container_content_card_back_ {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container_content_card_ , .container_content_card_front_ , .container_content_card_back_ {
+  border-radius: 25px;
+}
+
+.container_content_card_2_ {
+  margin: 0 4% ;
+}
+
+.container_content_card_3_ {
+  margin: 0 4% 0 0;
+}
+
+.container_content_card_front_ {
+  z-index: 1;
+  backface-visibility: hidden;
+  background-size: 100% 100%;
+}
+
+.container_content_card_back_ {
+  background-color: rgb(219, 156, 83);  
+  text-align: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg) ;
+}
+
+.container_content_card_back_ h3 {
+  padding-top: 15%;
+  font-size: xx-large;
+}
+
+.container_content_card_back_ p {
+  font-size: 18px;
+  padding: 10% 10% 20% 10%;
+}
+
+.container_content_card_back_ button {
+  background-color: rgb(200, 127, 44);  
+  width: 200px;
+  height: 50px;
+  border-radius: 25px 0px;
+
+  border: 0;
+}
+
+.container_content_card_back_ button:hover {
+  background-color: rgb(161, 96, 21);  
+  color: rgb(255, 200, 152);
+}
+
+.container_content_card_:hover {
+  transform: rotateY(180deg) ;  
+}
+
+.container_content_card_front_1 {
+  background-image: url("../images/coffe\ 6.jpg");
+}
+
+.container_content_card_front_2 {
+  background-image: url("../images/coffe\ 7.jpg");
+}
+
+
+.container_content_card_front_3 {
+  background-image: url("../images/coffe\ 8.jpg");
+}
+
+.container_content_card_front_4 {
+  background-image: url("../images/coffe\ 9.jpg");
+}
+
+.container_content_card_front_5 {
+  background-image: url("../images/coffe\ 14.jpg");
+}
+
+.container_content_card_front_6 {
+  background-image: url("../images/coffe\ 11.jpg");
+}
+
+
+.container_content_card_front_7 {
+  background-image: url("../images/coffe\ 12.jpg");
+}
+
+.container_content_card_front_8 {
+  background-image: url("../images/coffe\ 13.jpg");
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.footer_ {
+  background-color: rgb(189, 168, 141);
+  padding: 0 0 50px 0;
+  text-align: center;
+}
+
+.footer_ img {
+  width: 260px;
+  height: 240px;
+  margin-bottom: -2%;
+}
+
+.footer_ ul {
+  padding-bottom: 1%;
+}
+
+.footer_ li {
+  background-color: rgb(133, 96, 18);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer_ a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: rgb(215, 190, 136);
+  line-height: 1%;
+  padding-top: 30%;
+  padding-right: 35%;
+  font-size: 24px;
+  margin: 0 15%;
+}
+
+.footer_ p {
+  color: rgb(107, 78, 6);
+  text-transform: uppercase;
+}
